@@ -56,10 +56,13 @@
 
 		</ol>
 	</div>
-
+	<h1 id="bottom">Este site foi estilizado com Kaian.js StyleScript que está em desenvolvimento...</h1>
+	<h2 id="ps">PS: o gif da matrix não é gif, é feito a mão kkkkkk</h2>
+	<h2 id="by">By Felipe Kaian</h2>
+	<img id="github" src="./github.png">
 	<script type="text/javascript">
 
-		var divTitle = get('divTitle'),title = get('title'),matrix = get('matrix'), eu = get('eu'),divSobreMim = get('divSobreMim'), dsmt = get('dsmt'), dsmp = get('dsmp'), divObjetivo = get('divObjetivo'), dot = get('dot'),dop = get('dop'),divFormacaoAcademica = get('divFormacaoAcademica'),dfat = get('dfat'),dfap = get('dfap'), divCursos = get('divCursos'), dct = get('dct'), dcp = get('dcp'), divHabilidades = get('divHabilidades'), dht = get('dht'), dhp = get('dhp');
+		var divTitle = get('divTitle'),title = get('title'),matrix = get('matrix'), eu = get('eu'),divSobreMim = get('divSobreMim'), dsmt = get('dsmt'), dsmp = get('dsmp'), divObjetivo = get('divObjetivo'), dot = get('dot'),dop = get('dop'),divFormacaoAcademica = get('divFormacaoAcademica'),dfat = get('dfat'),dfap = get('dfap'), divCursos = get('divCursos'), dct = get('dct'), dcp = get('dcp'), divHabilidades = get('divHabilidades'), dht = get('dht'), dhp = get('dhp'),bottom = get('bottom'), ps=get('ps'),by=get('by'),github = get('github');
 
 		divTitle.setW(ww)
 		divTitle.setH(150)
@@ -164,7 +167,7 @@
 		dcp.color = 'gray'
 
 		divHabilidades.setW(500)
-		divHabilidades.setH(600)
+		divHabilidades.setH(550)
 		divHabilidades.backgroundColor = '#232323'
 		divHabilidades.color = 'white'
 		divHabilidades.borderRadius = '30px'
@@ -184,8 +187,27 @@
 		dhp.fontSize = '20px'
 		dhp.color = 'gray'
 
-		body.height = '100px'
+		bottom.setY(1000)
+		bottom.setX(100)
+		bottom.fontSize = '60px'
+		bottom.setW(1100)
+		bottom.color = '#232323'
 
+		ps.setX(100)
+		ps.setY(1300)
+		ps.setW(1000)
+		ps.color = '#232323'
+
+		by.setX(1550)
+		by.setY(1300)
+		by.setW(1000)
+		by.color = '#232323'
+
+		github.setW(30)
+		github.setH(30)
+		github.setX(1720)
+		github.setY(1295)
+		
 	</script>
 
 	<script type="text/javascript" src="./matrix.js"></script>
