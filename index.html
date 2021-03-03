@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript" src="./kaian.js"></script>
+
+	<div id="divTitle">
+		<h1 id='title'>FELIPE KAIAN</h1>
+	</div>
+
+	<canvas id='matrix' width="1920px" height="900px"></canvas>
+	
+	<img id="eu" src="./eu.jpg">
+
+	<div id="divSobreMim">
+		<h2 id= 'dsmt'>Sobre mim</h2>
+		<p id='dsmp'>Olá, sou Felipe Kaian, atualmente tenho 18 anos, amante da matemática, apixonado por desafios, ficante do JavaScript, e casado com a lógica de programação. ps: também curto programar jogos ás vezes, mas não conta pra niguém não... cof cof cof, <a href="https://play.google.com/store/apps/details?id=com.mantarabox.dinosmashgame" style="color: white">Dino Smash</a> dispoível na play store...</p>
+	</div>
+
+	<div id="divObjetivo">
+		<h2 id='dot'>Objetivos</h2>
+		<p id='dop'>Meu maior objetivo é ter uma ótima idea, algo revolucionario que mudaria o mundo como vemos hoje, mas até lá meu foco é aprofundar em diversas áreas porem mantendo o foco na lógica de programação pesada, minha favorita, portanto estou de olho em áreas de machine learning e redes neurais, as quais eu já estudo, mas tenho como objetivo me especializar e aprender cada vez mais sobre elas.</p>
+	</div>
+
+	<div id="divFormacaoAcademica">
+		<h2 id="dfat">Formação acadêmica</h2>
+		<p id="dfap">Em relação a minha formação Acadêmica, eu possuo ensino médio completo no colégio Genêsis, tendo estudado em outras instituições anteriormente ,como Acesso e despertar, e no momento estou cursando ensino superior na  <a href="https://www.ucsal.br/" style="color: white">Unversidade Católica de Salvador</a> no curso de bacharelado em Engenharia de Sftware, durante o turno vespertino, onde me encontro atualmente no terceiro semestre.</p>
+	</div>
+
+	<div id="divCursos">
+		<h2 id="dct">Cursos</h2>
+		<ul id="dcp">
+			<li>Apersar de saber fazer listas não ordenadas no HTML</li>
+			<li>Eu nunca fiz nenhum curso</li>
+			<li>Pois prefiro aprender sozinho</li>
+			<li>Acho mais rápido ,dinâmico , prático e rentável</li>
+			<li>Por isso gosto de aprender ultilizando:</li>
+			<li>Youtube</li>
+			<li>Stack Over Flow</li>
+			<li>w3schools</li>
+			<li>dentre outros</li>
+		</ul>
+	</div>
+
+	<div id="divHabilidades">
+		<h2 id="dht">Habilidades</h2>
+		<ol id="dhp">
+			<li>Especialista em Lógica de programação com quase 7 anos de experiência</li><br>
+			<li>Fluencia nas linguagens: Java e JavaScript</li><br>
+			<li>Conhecimentos sobre Machine learning, redes neurais, algoritimos geneticos, dentre outros...</li><br>
+			<li>Uso ,um tanto quanto peculiar, da matemática para a redução de código e aumento da eficiência de algoritimos</li><br>
+			<li>Ampla experiência com programação de jogos, com anos de prática e um game expotado, cof cof <a href="https://play.google.com/store/apps/details?id=com.mantarabox.dinosmashgame" style="color: white">Dino Smash</a> baixa lá rsrs</li><br>
+			<li>Conhecimentos razoáveis em Python,HTML,CSS,C++ e CGE</li><br>
+
+		</ol>
+	</div>
+
+	<script type="text/javascript">
+
+		var divTitle = get('divTitle'),title = get('title'),matrix = get('matrix'), eu = get('eu'),divSobreMim = get('divSobreMim'), dsmt = get('dsmt'), dsmp = get('dsmp'), divObjetivo = get('divObjetivo'), dot = get('dot'),dop = get('dop'),divFormacaoAcademica = get('divFormacaoAcademica'),dfat = get('dfat'),dfap = get('dfap'), divCursos = get('divCursos'), dct = get('dct'), dcp = get('dcp'), divHabilidades = get('divHabilidades'), dht = get('dht'), dhp = get('dhp');
+
+		divTitle.setW(ww)
+		divTitle.setH(150)
+		divTitle.backgroundColor = '#111122'
+		divTitle.boxShadow = '-25px 25px 40px rgba(0,0,0,0.9)'
+
+		title.fontSize = '100px'
+		title.color = 'white'
+		title.setX(50)
+		title.setY(15)
+		title.setW(1000)
+		title.textShadow = '-25px 25px 40px rgba(0,0,0,0.5),-5px 5px 0 rgba(255,255,255,0.5),-10px 10px 0 rgba(255,255,255,0.5),-15px 15px 0 rgba(255,255,255,0.5)'
+		title.fontFamily = '"Lucida Console", Courier, monospace'
+
+		eu.setX(200)
+		eu.setY(200)
+		eu.setW(300)
+		eu.setH(450)
+		eu.borderRadius = '40px'
+
+		divSobreMim.setX(175)
+		divSobreMim.setY(600)
+		divSobreMim.setW(350)
+		divSobreMim.setH(300)
+		divSobreMim.backgroundColor = '#232323'
+		divSobreMim.borderRadius = '30px'
+
+		dsmt.setX(55)
+		dsmt.setY(10)
+		dsmt.setW(300)
+		dsmt.fontSize = '50px'
+		dsmt.color = 'white'
+
+		dsmp.setX(20)
+		dsmp.setY(80)
+		dsmp.setW(320)
+		dsmp.setH(500)
+		dsmp.fontSize = '20px'
+		dsmp.color = 'gray'
+
+		divObjetivo.setW(500)
+		divObjetivo.setH(300)
+		divObjetivo.backgroundColor = '#232323'
+		divObjetivo.color = 'white'
+		divObjetivo.borderRadius = '30px'
+		divObjetivo.setX(650)
+		divObjetivo.setY(200)
+
+		dot.setX(140)
+		dot.setY(10)
+		dot.setW(300)
+		dot.fontSize = '50px'
+		dot.color = 'white'
+
+		dop.setX(20)
+		dop.setY(80)
+		dop.setW(450)
+		dop.setH(500)
+		dop.fontSize = '20px'
+		dop.color = 'gray'
+
+		divFormacaoAcademica.setW(500)
+		divFormacaoAcademica.setH(300)
+		divFormacaoAcademica.backgroundColor = '#232323'
+		divFormacaoAcademica.color = 'white'
+		divFormacaoAcademica.borderRadius = '30px'
+		divFormacaoAcademica.setX(650)
+		divFormacaoAcademica.setY(600)
+
+		dfat.setX(20)
+		dfat.setY(10)
+		dfat.setW(600)
+		dfat.fontSize = '50px'
+		dfat.color = 'white'
+
+		dfap.setX(20)
+		dfap.setY(80)
+		dfap.setW(450)
+		dfap.setH(500)
+		dfap.fontSize = '20px'
+		dfap.color = 'gray'
+
+		divCursos.setW(500)
+		divCursos.setH(300)
+		divCursos.backgroundColor = '#232323'
+		divCursos.color = 'white'
+		divCursos.borderRadius = '30px'
+		divCursos.setX(1300)
+		divCursos.setY(200)
+
+		dct.setX(170)
+		dct.setY(10)
+		dct.setW(300)
+		dct.fontSize = '50px'
+		dct.color = 'white'
+
+		dcp.setX(50)
+		dcp.setY(80)
+		dcp.setW(500)
+		dcp.setH(500)
+		dcp.fontSize = '20px'
+		dcp.color = 'gray'
+
+		divHabilidades.setW(500)
+		divHabilidades.setH(600)
+		divHabilidades.backgroundColor = '#232323'
+		divHabilidades.color = 'white'
+		divHabilidades.borderRadius = '30px'
+		divHabilidades.setX(1300)
+		divHabilidades.setY(600)
+
+		dht.setX(125)
+		dht.setY(10)
+		dht.setW(300)
+		dht.fontSize = '50px'
+		dht.color = 'white'
+
+		dhp.setX(40)
+		dhp.setY(80)
+		dhp.setW(450)
+		dhp.setH(700)
+		dhp.fontSize = '20px'
+		dhp.color = 'gray'
+
+		body.height = '100px'
+
+	</script>
+
+	<script type="text/javascript" src="./matrix.js"></script>
+
+</body>
+</html>
